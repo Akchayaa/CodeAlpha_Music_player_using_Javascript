@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Music Player</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Akchayaa V">
+        <meta name="description" content="Explore the music world...">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="favicon.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="top-bar">
+                <i class="material-icons">expand_more</i>
+                <span>Now playing</span>
+                <i class="material-icons">more_horiz</i>
+            </div>
+            <div class="img-area">
+                <img src="">
+            </div>
+            <div class="song-details">
+                <p class="name"></p>
+                <p class="artist"></p>
+            </div>
+            <div class="progress-area">
+                <div class="progress-bar">
+                    <audio id="main-audio" src=""></audio>
+                </div>
+                <div class="timer">
+                    <span class="current">0:00</span>
+                    <span class="duration">0:00</span>
+                </div>
+                <audio id="main-audio" src=""></audio>
+            </div>
+            <div class="controls">
+                <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+                <i id="prev" class="material-icons prev">fast_rewind</i>
+                <div class="play-pause">
+                    <i class="material-icons play">play_arrow</i>
+                </div>
+                <i id="next" class="material-icons next">fast_forward</i>
+                <i id="more-music" class="material-icons">queue_music</i>
+            </div>
+            <div class="music-list">
+                <div class="header">
+                    <div class="row">
+                        <i class="list material-icons">queue_music</i>
+                        <span>Music list</span>
+                    </div>
+                    <i id="close" class="material-icons">close</i>
+                </div>
+                <ul>
+                    <li>
+                        <div class="row">
+                            <span>Kadhal Endral</span>
+                            <p>Yuvan shankar raja</p>
+                        </div>
+                        <audio src="kadhal endral.mp3"></audio>
+                        <span class="audio-duration">0:29</span>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <span>Mazhai Vara Poguthe</span>
+                            <p>Harris jayaraj</p>
+                        </div>
+                        <span class="audio-duration">0:26</span>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <span>Munbe Vaa</span>
+                            <p>Shreya goshal</p>
+                        </div>
+                        <span class="audio-duration">0:35</span>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <span>Neeye Neeye</span>
+                            <p>Srikanth deva</p>
+                        </div>
+                        <span class="audio-duration">0:38</span>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <span>Ranjithame</span>
+                            <p>Manasi</p>
+                        </div>
+                        <span class="audio-duration">0:34</span>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <span>Rowdy Baby</span>
+                            <p>Dhanush</p>
+                        </div>
+                        <span class="audio-duration">0:32</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="music-list.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
